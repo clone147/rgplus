@@ -375,7 +375,7 @@ button {
 .hero-bg-image {
     position: absolute;
     inset: 0;
-    background-image: url('../assets/images/hero-home.png');
+    background-image: url('../assets/images/hero-home.jpg');
     background-size: cover;
     background-position: center;
     opacity: 0.15;
@@ -585,11 +585,11 @@ button {
 }
 
 .page-hero-oferta .page-hero-bg-image {
-    background-image: url('../assets/images/hero-oferta.png');
+    background-image: url('../assets/images/hero-oferta.jpg');
 }
 
 .page-hero-municom .page-hero-bg-image {
-    background-image: url('../assets/images/hero-municom.png');
+    background-image: url('../assets/images/hero-municom.jpg');
     opacity: 0.15;
 }
 
