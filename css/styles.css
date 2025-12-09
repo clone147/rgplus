@@ -179,8 +179,7 @@ button {
 
 .logo-img-footer {
     height: 36px;
-    filter: brightness(0) invert(1);
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 .nav-menu {
