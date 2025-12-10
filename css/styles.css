@@ -2096,8 +2096,10 @@ button {
 
 .footer-bottom {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    gap: var(--space-sm);
     padding-top: var(--space-xl);
     border-top: 1px solid var(--gray-800);
 }
@@ -2105,6 +2107,14 @@ button {
 .footer-bottom p {
     font-size: 0.85rem;
     color: var(--gray-500);
+}
+
+.footer-update {
+    width: 100%;
+    text-align: center;
+    font-size: 0.7rem !important;
+    color: var(--gray-600) !important;
+    margin-top: var(--space-sm);
 }
 
 .footer-badges {
