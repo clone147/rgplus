@@ -1,21 +1,21 @@
 /* ===== CSS Variables ===== */
 :root {
-    /* Colors - Deep Red / Corporate Theme */
-    --primary: #991b1b;
-    --primary-dark: #7f1d1d;
-    --primary-light: #b91c1c;
-    --primary-50: #fef2f2;
-    --primary-100: #fee2e2;
-    --primary-900: #450a0a;
+    /* Colors - R&G Brand Red (#e4002c) */
+    --primary: #e4002c;
+    --primary-dark: #c50025;
+    --primary-light: #ff1744;
+    --primary-50: #fff5f5;
+    --primary-100: #ffe0e6;
+    --primary-900: #5c0011;
 
-    /* Secondary - Crimson Red */
-    --secondary: #dc2626;
-    --secondary-dark: #b91c1c;
-    --secondary-light: #ef4444;
+    /* Secondary - Supporting Red tones */
+    --secondary: #e4002c;
+    --secondary-dark: #c50025;
+    --secondary-light: #ff4d6a;
 
-    /* Accent - Gold (zachowane dla CTA) */
-    --accent: #d97706;
-    --accent-light: #f59e0b;
+    /* Accent - Warm Gold for CTAs */
+    --accent: #e4002c;
+    --accent-light: #ff1744;
 
     /* Neutrals */
     --gray-50: #f8fafc;
@@ -85,8 +85,8 @@ html {
 
 body {
     font-family: var(--font-body);
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 1.0625rem;
+    line-height: 1.65;
     color: var(--text);
     background: var(--bg);
     -webkit-font-smoothing: antialiased;
@@ -248,7 +248,7 @@ button {
 
 .nav-link {
     padding: var(--space-sm) var(--space-md);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     font-weight: 500;
     color: var(--gray-600);
     border-radius: var(--radius);
@@ -313,21 +313,21 @@ button {
     gap: var(--space-sm);
     padding: var(--space-md) var(--space-xl);
     font-family: var(--font-display);
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 500;
     border-radius: var(--radius-full);
     transition: var(--transition);
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-dark) 100%);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     color: white;
-    box-shadow: 0 4px 14px 0 rgba(14, 165, 233, 0.4);
+    box-shadow: 0 4px 14px 0 rgba(228, 0, 44, 0.35);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px 0 rgba(14, 165, 233, 0.5);
+    box-shadow: 0 6px 20px 0 rgba(228, 0, 44, 0.5);
 }
 
 .btn-secondary {
@@ -450,7 +450,7 @@ button {
 }
 
 .hero-title {
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(2.75rem, 5.5vw, 4.25rem);
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: var(--space-lg);
@@ -464,10 +464,10 @@ button {
 }
 
 .hero-desc {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     color: var(--gray-600);
     margin-bottom: var(--space-xl);
-    max-width: 500px;
+    max-width: 520px;
 }
 
 .hero-actions {
@@ -593,14 +593,14 @@ button {
 }
 
 .page-hero-title {
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(2.25rem, 4.5vw, 3.25rem);
     margin-bottom: var(--space-lg);
 }
 
 .page-hero-desc {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     color: var(--gray-600);
-    max-width: 600px;
+    max-width: 620px;
     margin: 0 auto;
 }
 
@@ -630,7 +630,7 @@ button {
 }
 
 .section-title {
-    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-size: clamp(1.875rem, 3.25vw, 2.625rem);
 }
 
 /* ===== Products Grid ===== */
@@ -698,13 +698,13 @@ button {
 }
 
 .product-title {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     margin-bottom: var(--space-sm);
 }
 
 .product-desc {
     color: var(--gray-600);
-    font-size: 0.95rem;
+    font-size: 1rem;
     flex-grow: 1;
     margin-bottom: var(--space-lg);
 }
@@ -747,12 +747,12 @@ button {
 }
 
 .feature-title {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: var(--space-sm);
 }
 
 .feature-desc {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--gray-500);
 }
 
@@ -769,13 +769,13 @@ button {
 }
 
 .cta-title {
-    font-size: 1.75rem;
+    font-size: 1.875rem;
     margin-bottom: var(--space-sm);
 }
 
 .cta-desc {
     color: rgba(255, 255, 255, 0.85);
-    font-size: 1.1rem;
+    font-size: 1.15rem;
 }
 
 /* ===== Offer Page ===== */
@@ -828,14 +828,14 @@ button {
 }
 
 .offer-card-title {
-    font-size: 2rem;
+    font-size: 2.125rem;
     margin-bottom: var(--space-md);
 }
 
 .offer-card-desc {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     color: var(--gray-600);
-    max-width: 700px;
+    max-width: 720px;
     margin-bottom: var(--space-2xl);
 }
 
@@ -866,12 +866,12 @@ button {
 }
 
 .offer-module h4 {
-    font-size: 1rem;
+    font-size: 1.0625rem;
     margin-bottom: var(--space-xs);
 }
 
 .offer-module p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--gray-500);
 }
 
@@ -908,12 +908,12 @@ button {
 }
 
 .service-card h3 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: var(--space-sm);
 }
 
 .service-card p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--gray-500);
 }
 
@@ -932,12 +932,12 @@ button {
 }
 
 .municom-intro-content h2 {
-    font-size: 2rem;
+    font-size: 2.125rem;
     margin-bottom: var(--space-lg);
 }
 
 .municom-intro-content p {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     color: var(--gray-600);
     margin-bottom: var(--space-2xl);
 }
